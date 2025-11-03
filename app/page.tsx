@@ -96,7 +96,7 @@ export default function Home() {
   return (
     <div 
       className="overflow-x-hidden relative transition-colors duration-500"
-      style={{ backgroundColor: isLightTheme ? '#fffcf5' : '#050505' }}
+      style={{ backgroundColor: isLightTheme ? '#F2F0EF' : '#050505' }}
     >
       <div style={{ height: '100vh', position: 'absolute', top: 0, left: 0, right: 0, zIndex: 40 }}>
         <StaggeredMenu
@@ -159,21 +159,23 @@ export default function Home() {
           <h2 
             className={`text-8xl font-bold mb-0 transition-colors duration-500 ${isLightTheme ? 'text-black' : 'text-white'}`}
             style={{
-              fontFamily: fonts[currentFont].cssVar,
+              fontFamily: 'var(--font-bebas)',
               transition: 'color 0.5s ease',
-              height: '8rem',
+              height: '9rem',
               display: 'flex',
-              alignItems: 'center'
+              alignItems: 'center',
+              minHeight: '9rem'
             }}
           >
             About Me
           </h2>
+          <div className={`h-1 w-full mb-12 transition-all duration-500 ${isLightTheme ? 'bg-gradient-to-r from-transparent via-black to-transparent' : 'bg-gradient-to-r from-transparent via-white to-transparent'}`} />
           
           <div className="space-y-00">
             {/* Images stacked in middle */}
-            <div className="flex justify-center relative h-[500px]">
+            <div className="flex justify-center relative h-[300px]">
               {/* Main centered image */}
-              <div className={`absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-1/2 z-20 w-80 h-96 overflow-hidden rounded-3xl ${isLightTheme ? 'shadow-2xl shadow-gray-200' : 'shadow-2xl shadow-black/50'}`}>
+              <div className={`absolute top-[40%] left-1/2 -translate-x-[50%] -translate-y-1/2 z-20 w-80 h-96 overflow-hidden rounded-3xl transition-all duration-500 hover:scale-[1.1] ${isLightTheme ? 'shadow-2xl shadow-gray-200' : 'shadow-2xl shadow-black/50'}`}>
                 <Image
                   src="/images/AboutMe.jpeg"
                   alt="Gael Garcia"
@@ -184,7 +186,7 @@ export default function Home() {
               </div>
               
               {/* Left image - tilted left */}
-              <div className={`absolute top-[52%] left-1/2 -translate-x-[125%] -translate-y-1/2 -rotate-12 z-10 w-72 h-88 overflow-hidden rounded-3xl ${isLightTheme ? 'shadow-xl shadow-gray-200' : 'shadow-xl shadow-black/50'}`}>
+              <div className={`absolute top-[43%] left-1/2 -translate-x-[125%] -translate-y-1/2 -rotate-12 z-10 w-72 h-88 overflow-hidden rounded-3xl ${isLightTheme ? 'shadow-xl shadow-gray-200' : 'shadow-xl shadow-black/50'}`}>
                 <Image
                   src="/images/AboutMe2.jpeg"
                   alt="Gael Garcia"
@@ -195,7 +197,7 @@ export default function Home() {
               </div>
               
               {/* Right image - tilted right */}
-              <div className={`absolute top-[52%] right-1/2 translate-x-[125%] -translate-y-1/2 rotate-12 z-10 w-72 h-88 overflow-hidden rounded-3xl ${isLightTheme ? 'shadow-xl shadow-gray-200' : 'shadow-xl shadow-black/50'}`}>
+              <div className={`absolute top-[43%] right-1/2 translate-x-[125%] -translate-y-1/2 rotate-12 z-10 w-72 h-88 overflow-hidden rounded-3xl ${isLightTheme ? 'shadow-xl shadow-gray-200' : 'shadow-xl shadow-black/50'}`}>
                 <Image
                   src="/images/AboutMe3.jpeg"
                   alt="Gael Garcia"
@@ -207,8 +209,8 @@ export default function Home() {
             </div>
             
             {/* Text content below */}
-            <div className="max-w-4xl mx-auto space-y-12">
-              <div className="space-y-8">
+            <div className="max-w-4xl mx-auto space-y-0">
+              <div className="space-y-0">
                 <p className={`text-3xl text-center transition-colors duration-500 ${isLightTheme ? 'text-gray-800' : 'text-gray-200'}`}>
                   Just a chill guy who likes to have fun!
                 </p>
@@ -229,17 +231,19 @@ export default function Home() {
       <section id="experience" className="relative min-h-screen py-0 px-16">
         <div className="max-w-7xl mx-auto">
           <h2 
-            className={`text-8xl font-bold mb-16 transition-colors duration-500 ${isLightTheme ? 'text-black' : 'text-white'}`}
+            className={`text-8xl font-bold mb-0 transition-colors duration-500 ${isLightTheme ? 'text-black' : 'text-white'}`}
             style={{
-              fontFamily: fonts[currentFont].cssVar,
+              fontFamily:  'var(--font-bebas)',
               transition: 'color 0.5s ease',
-              height: '8rem',
+              height: '9rem',
               display: 'flex',
-              alignItems: 'center'
+              alignItems: 'center',
+              minHeight: '9rem'
             }}
           >
             Experience
           </h2>
+          <div className={`h-1 w-full mb-12 transition-all duration-500 ${isLightTheme ? 'bg-gradient-to-r from-transparent via-black to-transparent' : 'bg-gradient-to-r from-transparent via-white to-transparent'}`} />
           
           <div className="space-y-16">
             <div>
@@ -285,17 +289,19 @@ export default function Home() {
       <section id="projects" className="min-h-screen py-32 px-16">
         <div className="max-w-7xl mx-auto">
           <h2 
-            className={`text-8xl font-bold mb-16 transition-colors duration-500 ${isLightTheme ? 'text-black' : 'text-white'}`}
+            className={`text-8xl font-bold mb-0 transition-colors duration-500 ${isLightTheme ? 'text-black' : 'text-white'}`}
             style={{
-              fontFamily: fonts[currentFont].cssVar,
+              fontFamily:  'var(--font-bebas)',
               transition: 'color 0.5s ease',
-              height: '8rem',
+              height: '9rem',
               display: 'flex',
-              alignItems: 'center'
+              alignItems: 'center',
+              minHeight: '9rem'
             }}
           >
             Projects
           </h2>
+          <div className={`h-1 w-full mb-12 transition-all duration-500 ${isLightTheme ? 'bg-gradient-to-r from-transparent via-black to-transparent' : 'bg-gradient-to-r from-transparent via-white to-transparent'}`} />
           
           {/* Placeholder content */}
           <div className={`text-2xl transition-colors duration-500 ${isLightTheme ? 'text-gray-600' : 'text-gray-400'}`}>
@@ -308,17 +314,19 @@ export default function Home() {
       <section id="contact" className="min-h-screen py-32 px-16">
         <div className="max-w-7xl mx-auto">
           <h2 
-            className={`text-8xl font-bold mb-16 transition-colors duration-500 ${isLightTheme ? 'text-black' : 'text-white'}`}
+            className={`text-8xl font-bold mb-0 transition-colors duration-500 ${isLightTheme ? 'text-black' : 'text-white'}`}
             style={{
-              fontFamily: fonts[currentFont].cssVar,
+              fontFamily:  'var(--font-bebas)',
               transition: 'color 0.5s ease',
-              height: '8rem',
+              height: '9rem',
               display: 'flex',
-              alignItems: 'center'
+              alignItems: 'center',
+              minHeight: '9rem'
             }}
           >
             Contact
           </h2>
+          <div className={`h-1 w-full mb-12 transition-all duration-500 ${isLightTheme ? 'bg-gradient-to-r from-transparent via-black to-transparent' : 'bg-gradient-to-r from-transparent via-white to-transparent'}`} />
           
           {/* Placeholder content */}
           <div className={`text-2xl transition-colors duration-500 ${isLightTheme ? 'text-gray-600' : 'text-gray-400'}`}>
